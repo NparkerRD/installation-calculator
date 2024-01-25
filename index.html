@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installation Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body class="center flex-col">
+    <main class="calc flex-col">
+      <!-- Calculator Inputs -->
+      <div class="calc_inputs flex">
+        <div class="input_group">
+          <label for="doors">Doors</label>
+          <input type="number" name="doors" id="doors" value="7" />
+        </div>
+        <div class="input_group">
+          <label for="days">Days</label>
+          <input type="number" name="days" id="days" value="3" />
+        </div>
+        <div class="input_group">
+          <label for="nights">Nights</label>
+          <input type="number" name="nights" id="nights" value="3" />
+        </div>
+        <div class="input_group">
+          <label for="people">People</label>
+          <input type="number" name="people" id="people" value="5" />
+        </div>
+        <div class="input_group">
+          <label for="hours">Hours</label>
+          <input type="number" name="hours" id="hours" value="14" />
+        </div>
+        <div class="input_group">
+          <label for="distance">Distance</label>
+          <input type="number" name="distance" id="distance" value="900" />
+        </div>
+      </div>
+
+      <!-- Toggle switch -->
+      <div class="toggle toggle--flying">
+        <p class="toggle-label">Calculate flying cost</p>
+        <div class="toggle_wrapper">
+          <div class="toggle_inner toggle-switch"></div>
+        </div>
+      </div>
+
+      <!-- Calculator Total -->
+      <div class="calc_total">
+        <hr />
+        <div class="result-group">
+          <p>Total Cost</p>
+          <div class="result result--total"></div>
+        </div>
+        <hr />
+      </div>
+
+      <!-- Calculator Results - Breakdown -->
+      <div class="calc_results flex-col">
+        <div class="result-group">
+          <p>Door Installation</p>
+          <div class="result result--install"></div>
+        </div>
+        <div class="result-group">
+          <p>Wiring</p>
+          <div class="result result--wiring"></div>
+        </div>
+        <div class="result-group">
+          <p>Hotel</p>
+          <div class="result result--hotel"></div>
+        </div>
+        <div class="result-group">
+          <p>Travel Time</p>
+          <div class="result result--travel-time"></div>
+        </div>
+        <div class="result-group">
+          <p>Per Diem</p>
+          <div class="result result--per-diem"></div>
+        </div>
+        <div class="result-group">
+          <p>Mileage</p>
+          <div class="result result--mileage"></div>
+        </div>
+      </div>
+
+      <!-- Calculator Buttons -->
+      <div class="calc_buttons flex-col">
+        <button class="btn btn--calculate">Calculate</button>
+        <button class="btn btn--clear">Clear</button>
+      </div>
+    </main>
+    <footer class="attribution">
+      <a
+        href="https://www.flaticon.com/free-icons/download"
+        title="download icons"
+        >Download icons created by Uniconlabs - Flaticon</a
+      >
+    </footer>
+  </body>
+</html>
